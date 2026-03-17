@@ -1,0 +1,6 @@
+
+# .gitignore
+
+generic/
+nvim/nvim-pack-lock.json
+
