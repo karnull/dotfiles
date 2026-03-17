@@ -1,5 +1,6 @@
 # .gitignore
 
+nvim/nvim-pack-lock.json
 zsh/hacks.zsh
 
 # not tie any specific submodule version to a commit
