@@ -1,0 +1,80 @@
+[init]
+    defaultBranch = main
+
+[rerere]
+    enabled = true
+
+[core]
+    pager = delta --side-by-side --syntax-theme OneHalfDark
+
+[alias]
+    a  = add --all
+    ai = add --interactive
+    ar = restore --staged
+
+    b  = branch --all
+    bs = checkout
+    bl = switch -
+    bo = switch --track
+    bn = switch --create
+    br = branch --move
+    bd = branch --delete
+
+    c  = commit
+    cm = commit --message
+    ca = commit --amend --no-edit
+    cf = commit --fixup
+
+    d  = diff
+    ds = diff --staged
+
+    e  = cherry-pick
+
+    f  = fetch
+    fa = fetch --all
+    fp = fetch --prune
+    fo = fetch origin
+
+    g  = clone --recurse-submodules --depth=1 --shallow-submodules
+    gc = clone --recurse-submodules
+    gs = submodule update --init --recursive
+
+    l  = log --pretty=format:'%C(yellow)%h %C(brightred)%an <%ae> %C(brightgreen)%ad%C(reset)%n%n%s%n%n%b%n' --date=short --graph
+    ll = log --stat
+    lc = rev-list --count HEAD
+    lcurrent = log --pretty=format:'%C(yellow)%h %C(brightred)%an <%ae> C(brightgreen)%ad%C(reset)%n%n%s%n%n%b%n' --date=short --graph main..HEAD
+
+    m = blame -C -w -M
+
+    r  = rebase --interactive --autostash --keep-empty --autosquash --update-refs
+    rf = rebase --autostash --keep-empty --autosquash --update-refs
+    rt = rebase --committer-date-is-author-date
+    rx = rebase --abort
+    rs = rebase --skip
+    rc = rebase --continue
+
+    s  = stash list
+    ss = stash
+    sn = stash push -m
+    sp = stash pop
+    sd = stash drop
+    sc = stash show
+
+    t  = tag --list
+    td = tag --delete
+    tn = tag
+
+    ui = !lazygit
+
+    w  = worktree list
+    wa = worktree add
+    wr = worktree remove
+    wx = worktree prune
+
+    x  = reset
+    xv = revert
+    xs = restore
+
+    pushh = push --force-with-lease
+    pulll = pull --rebase
+
