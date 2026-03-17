@@ -1,0 +1,23 @@
+# Global git ignore
+#-------------------
+
+# System Junk
+*~
+*.swp
+*.swo
+.tags
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+
+# Copilot instruction
+copilot-instructions.md
+.gitmessage
+
+# Personal Notation
+,*
+
+
+**/.claude/settings.local.json
