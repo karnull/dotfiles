@@ -5,7 +5,7 @@ vim.pack.add({
     'https://github.com/tpope/vim-obsession',         --
     'https://github.com/numToStr/Comment.nvim',       -- easier commenting
     'https://github.com/kylechui/nvim-surround',      -- more surround actions
-    'https://github.com/karshPrime/ifdef.nvim',       --
+    'https://github.com/karnull/ifdef.nvim',          --
     'https://github.com/folke/twilight.nvim',         -- dim non-focused code
     'https://github.com/Djancyp/better-comments.nvim',-- colour coded comments
     'https://github.com/lukas-reineke/indent-blankline.nvim'

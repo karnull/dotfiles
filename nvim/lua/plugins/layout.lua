@@ -2,7 +2,7 @@
 --# Layout #--------------------------------------------------------------------
 
 vim.pack.add({
-    'https://github.com/karshPrime/tokyoburn.nvim', -- color theme
+    'https://github.com/karnull/tokyoburn.nvim',    -- color theme
     'https://github.com/MunifTanjim/nui.nvim',      -- message UI framework
     'https://github.com/folke/noice.nvim',          -- message UI
     'https://github.com/airblade/vim-gitgutter',    -- git column
@@ -46,7 +46,6 @@ vim.o.signcolumn = 'yes'          -- Always show the sign column (gutter)
 --# noice #---------------------------------------------------------------------
 
 require("noice").setup({
-
     -- Keep messages on screen for longer
     views = { mini = { timeout = 10000, }, },
 
