@@ -1,0 +1,1 @@
+/home/karsh/.config/hacks.zsh
