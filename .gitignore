@@ -1,0 +1,12 @@
+
+# .gitignore
+
+**/.DS_Store
+
+nvim/lazy-lock.json
+zsh/hacks.zsh
+
+# not tie any specific submodule version to a commit
+kar.sh/
+tmux/plugins/tpm/
+
