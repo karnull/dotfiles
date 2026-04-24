@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+# Layout Structure
+tmux \
+    splitw -h -l 25% -b -d -c "#{pane_current_path}" \;\
+    splitw -h -l 33% -c "#{pane_current_path}" \;\
+    splitw -v -l 75% -c "#{pane_current_path}"
+
+# Initial pane state
+tmux send -t 3 '\
+clear ;\
+echo -e "\033[33m[LOGS]\033[0m" ;\
+~/.local/bin/gl ;\
+echo -e "\n\033[33m[STATUS]\033[0m" ;\
+git status -s --show-stash --ignore-submodule ;\
+' Enter
+
+# Open vim in explore mode
+tmux send -t 4 '$EDITOR +Explore' Enter
+
+# Open copilot
+tmux send -t 1 'copilot --resume' Enter
+
+# Select main pane
+tmux selectp -t 2
+
