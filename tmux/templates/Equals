@@ -1,0 +1,28 @@
+#!/usr/bin/env zsh
+
+# Config min width any pane should have
+MIN_PANE_WIDTH=100
+
+# Window width irrespective of pane size
+WINDOW_WIDTH=$(tmux display-message -p "#{window_width}")
+
+# Individual pane width calculation
+PANES=$(( $WINDOW_WIDTH / $MIN_PANE_WIDTH ))
+
+# Just create one pane if no new panes are required
+if [ "$PANES" -eq 0 ]; then
+    exit
+fi
+
+# Each pane's width
+PANE_WIDTH=$(( $WINDOW_WIDTH / $PANES ))
+
+# Generate panes
+while [ "$PANES" -gt 1 ]; do
+    PANES=$(( $PANES - 1 ))
+    tmux splitw -h -l $(( $PANE_WIDTH * $PANES )) -c "#{pane_current_path}"
+    sleep 0.05
+done
+
+tmux selectp -t 1
+
