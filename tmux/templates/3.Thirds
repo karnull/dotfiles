@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+# New panes
+tmux \
+    splitw -h -l 27% -b -d -c "#{pane_current_path}" \;\
+    splitw -h -l 40% -c "#{pane_current_path}"
+
+# Open vim in explore mode
+tmux send -t 1 '$EDITOR +Explore' Enter
+
+# Open copilot
+tmux send -t 3 'copilot' Enter
+
+# Select main pane
+tmux selectp -t 2
+
