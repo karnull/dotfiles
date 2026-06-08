@@ -107,12 +107,6 @@ Map('n', '<C-w>j', '<C-w>J')
 Map('n', '<C-w>k', '<C-w>K')
 Map('n', '<C-w>l', '<C-w>L')
 
--- re-size with the arrow keys
-Map('n', '<down>', ':resize +2<cr>')
-Map('n', '<up>', ':resize -2<cr>')
-Map('n', '<right>', ':vertical resize +2<cr>')
-Map('n', '<left>', ':vertical resize -2<cr>')
-
 
 --# Conveniences #--------------------------------------------------------------
 

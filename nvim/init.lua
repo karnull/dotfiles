@@ -21,6 +21,7 @@ if not vim.g.vscode then
                 require("plugins.lsp")
                 require("plugins.navigate")
                 require("plugins.tmux")
+                require("plugins.agentic")
             end)
         end,
     })
