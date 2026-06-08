@@ -12,12 +12,12 @@ Thumbs.db
 # Env files
 .env
 
-# Copilot instruction
-copilot-instructions.md
-.gitmessage
-
-# Personal Notation
+# Personal tooling
 ,*
+.commands
 
+# AI instruction
+.gitmessage
+copilot-instructions.md
+.claude/settings.local.json
 
-**/.claude/settings.local.json
