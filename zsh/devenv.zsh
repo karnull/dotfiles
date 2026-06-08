@@ -20,6 +20,7 @@ alias vic='vi ./src c h'
 
 alias figlet='figlet -w $(tput cols)'
 alias m='glow -w $(tput cols)'
+alias c=copilot
 alias findf="find . -type f -iname"
 
 alias g=git

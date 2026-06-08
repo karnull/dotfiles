@@ -15,6 +15,7 @@ require('switchboard').setup({
 
     commands = {
         lazygit = "lazygit",
+        copilot = 'copilot',
     },
 
     build_run_config = {{
@@ -75,7 +76,9 @@ Map('n', '<leader>b]', ':Switchboard vsplit build<CR>')
 Map('n', '<leader>b[', ':Switchboard split build<CR>')
 Map('n', '<leader>dd', ':Switchboard overlay debug<CR>')
 Map('n', '<leader>db', ':Switchboard background debug<CR>')
+
 Map('n', '<leader>gg', ':Switchboard overlay lazygit<CR>')
+Map('n', '<leader>a', ':Switchboard overlay copilot<CR>')
 
 Map('ni', '<leader>il', ':Switchboard bind label<CR>')
 Map('ni', '<leader>ii', ':Switchboard bind import<CR>')
