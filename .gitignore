@@ -1,8 +1,8 @@
 
 # .gitignore
 
-**/.DS_Store
-**/nvim/lazy-lock.json
+.DS_Store
+nvim/nvim-pack-lock.json
 
 generic/
 main/
