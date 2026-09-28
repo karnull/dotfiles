@@ -4,9 +4,6 @@
 [rerere]
     enabled = true
 
-[core]
-    pager = delta --side-by-side --syntax-theme OneHalfDark
-
 [alias]
     a  = add --all
     ai = add --interactive
@@ -25,8 +22,8 @@
     ca = commit --amend --no-edit
     cf = commit --fixup
 
-    d  = diff
-    ds = diff --staged
+	d = "!f() { $EDITOR -c 'nnoremap q :qall<CR>' -c \":DiffviewOpen $1 $2\"; }; f"
+	dl = !$EDITOR -c 'nnoremap q :qall<CR>' -c ':DiffviewOpen HEAD^ HEAD'
 
     e  = cherry-pick
 
