@@ -2,11 +2,13 @@
 --# Layout #--------------------------------------------------------------------
 
 vim.pack.add({
-    'https://github.com/karnull/tokyoburn.nvim',    -- color theme
-    'https://github.com/MunifTanjim/nui.nvim',      -- message UI framework
-    'https://github.com/folke/noice.nvim',          -- message UI
-    'https://github.com/airblade/vim-gitgutter',    -- git column
-    'https://github.com/nvim-lualine/lualine.nvim', -- statusbar
+    'https://github.com/karnull/tokyoburn.nvim',     -- color theme
+    'https://github.com/MunifTanjim/nui.nvim',       -- message UI framework
+    'https://github.com/folke/noice.nvim',           -- message UI
+    'https://github.com/airblade/vim-gitgutter',     -- git column
+    'https://github.com/sindrets/diffview.nvim',     -- git diffview
+    'https://github.com/nvim-tree/nvim-web-devicons',-- nerdfonts (req diffview)
+    'https://github.com/nvim-lualine/lualine.nvim',  -- statusbar
 })
 
 
@@ -41,6 +43,11 @@ require('lualine').setup({
 
 vim.g.gitgutter_enabled = 1       -- Enable GitGutter always
 vim.o.signcolumn = 'yes'          -- Always show the sign column (gutter)
+
+
+--# Git Diffview #--------------------------------------------------------------
+
+vim.opt.fillchars:append { diff = " " }
 
 
 --# noice #---------------------------------------------------------------------
