@@ -1,0 +1,1 @@
+../../../generic/nvim/lua/binds/keybinds.lua
