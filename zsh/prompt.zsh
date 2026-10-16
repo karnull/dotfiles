@@ -1,0 +1,1 @@
+../generic/zsh/prompt.zsh

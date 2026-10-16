@@ -1,10 +1,9 @@
 
 # .gitignore
 
-**/.DS_Store
-
 **/nvim/lazy-lock.json
 **/zsh/hacks.zsh
 
 generic/
 
+tmux/plugins/

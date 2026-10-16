@@ -1,4 +1,0 @@
-set icons true
-set ignorecase true
-set $EDITOR "vim"
-

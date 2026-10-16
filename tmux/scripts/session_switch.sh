@@ -1,0 +1,1 @@
+../../generic/tmux/scripts/session_switch.sh
