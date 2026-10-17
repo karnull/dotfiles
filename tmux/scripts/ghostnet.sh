@@ -1,1 +1,0 @@
-../../generic/tmux/scripts/ghostnet.sh
