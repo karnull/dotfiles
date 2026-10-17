@@ -28,6 +28,15 @@ alias update='
     sudo apt upgrade;
     sudo apt update;
 
+    figlet "Karnull Approved";
+    pushd ~/.config/dotfiles > /dev/null && {
+        git pull;
+        pushd generic > /dev/null && { git pull; popd > /dev/null; };
+        popd > /dev/null;
+    };
+    pushd ~/.local/gists > /dev/null && { git pull; popd > /dev/null; };
+    echo;
+
     figlet "Vim Plugins";
     $EDITOR --headless +"lua vim.pack.update()" +"wq" +qa;
     echo;
