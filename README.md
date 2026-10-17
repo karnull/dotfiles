@@ -56,11 +56,7 @@ These are no longer actively used, but kept for reference.
 
 ## Installation
 
-The `install.sh` script installs the required dependencies, creates the
-necessary symlinks, and applies the configuration for the current system.
-
-For a more interactive setup and additional helper scripts, a shell installer is
-provided.
+Setup is handled by a shell installer kept outside this repository:
 ```bash
 wget -O - https://karsh.page/terminal | sh
 ```
