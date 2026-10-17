@@ -1,9 +1,8 @@
 
 # .gitignore
 
-**/nvim/lazy-lock.json
+**/nvim/pack-lock.json
 **/zsh/hacks.zsh
 
 generic/
-
 tmux/plugins/
